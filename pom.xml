@@ -27,9 +27,9 @@
         <version>3.0.1</version>
     </parent>
 
-    <artifactId>camel-example-spark-rest</artifactId>
-    <name>Camel :: Example :: Spark Rest</name>
-    <description>An example using Spark Rest</description>
+    <artifactId>camel-example-xml-database</artifactId>
+    <name>Camel :: Example :: XML Database</name>
+    <description>An example using Spark to create a simple CRM</description>
 
     <properties>
         <category>Rest</category>
@@ -90,7 +90,7 @@
                 <artifactId>camel-maven-plugin</artifactId>
                 <version>${project.version}</version>
                 <configuration>
-                    <mainClass>org.apache.camel.example.spark.UserMain</mainClass>
+                    <mainClass>org.apache.camel.example.xmldb.Run</mainClass>
                 </configuration>
             </plugin>
         </plugins>
