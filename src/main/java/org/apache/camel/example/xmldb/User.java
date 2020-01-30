@@ -14,20 +14,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.camel.example.spark;
+package org.apache.camel.example.xmldb;
 
-import org.apache.camel.main.Main;
+public class User {
 
-public final class UserMain {
+    private int id;
+    private String name;
 
-    private UserMain() {
-        // to comply with checkstyle rule
+    public User() {
     }
 
-    public static void main(String[] args) throws Exception {
-        Main main = new Main();
-        main.bind("userService", new UserService());
-        main.addRouteBuilder(new UserRouteBuilder());
-        main.run();
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
