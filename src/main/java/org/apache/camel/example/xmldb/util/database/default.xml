@@ -54,7 +54,7 @@
             <title>Title author 1</title>
             <name>Iarna internetului</name>
             <year>2004</year>
-	    <departmentId>arted1</departmentId>
+	        <departmentId>arted1</departmentId>
             <citations>
                 <url>www.google.ro</url>
                 <url>www.youtube.com</url>
