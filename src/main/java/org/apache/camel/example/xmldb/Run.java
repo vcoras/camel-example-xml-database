@@ -5,9 +5,7 @@ import org.apache.camel.example.xmldb.util.Database;
 
 public class Run {
 
-    private Run() {
-        // to comply with checkstyle rule
-    }
+    private Run() {}
 
     public static void main(String[] args) throws Exception {
         

@@ -8,7 +8,6 @@
 package org.apache.camel.example.xmldb.util;
 
 import java.io.File;
-import java.io.IOException;
 
  public class Database {
 

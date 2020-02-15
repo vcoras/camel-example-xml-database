@@ -17,13 +17,22 @@ public class TheRouteBuilder extends RouteBuilder {
              .bindingMode(RestBindingMode.json);
 
         // REST API routes
-        rest("/rest").consumes("application/json").produces("application/json")
+        rest("/api").consumes("application/json").produces("application/json")
             
             // Authors
             .get("/author/{id}}").outType(Author.class)
                 .to("bean:authorService?method=getAuthorByID(${id})")
 
+            .put("/author/").outType(Author.class)
+                .to("bean:authorService?method=getAuthorByID(${id})")
+                
             .get("/author").route().transform().constant("Hello World");
+            
+            
+
+            
+
+
 
 
         // .get("/user/{id}}").outType(User.class)

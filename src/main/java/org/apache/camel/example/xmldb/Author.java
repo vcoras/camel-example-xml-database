@@ -18,11 +18,6 @@ public class Author {
         this.firstName = firstName;
     }
     
-    
-    public Author getAuthorByID(int id) {
-        return new Author(id, "Alwin");
-    }
-    
     // Getters and setters
     public int getId() {
         return id;
