@@ -8,7 +8,7 @@ public class Faculty {
     public Faculty() {
         super();
     }
-    
+
     // Getters and setters
     public int getId() {
         return id;

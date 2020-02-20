@@ -11,8 +11,17 @@ public class Run {
         
         Main main = new Main();
 
+        // Bind objects
         main.bind("authorService", new AuthorService());
+        main.bind("articleService", new ArticleService());
+        main.bind("departmentService", new DepartmentService());
+        main.bind("facultyService", new FacultyService());
+        main.bind("universityService", new UniversityService());
+
+        // RouteBuilder
         main.addRouteBuilder(new TheRouteBuilder());
+
+        // Run the app
         main.run();
 
         Database connection = new Database();
