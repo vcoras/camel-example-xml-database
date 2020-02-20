@@ -5,7 +5,7 @@ import org.apache.camel.example.xmldb.util.Database;
 
 public class Run {
 
-    private Run() {}
+    private Run() { super(); }
 
     public static void main(String[] args) throws Exception {
         

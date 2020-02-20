@@ -1,4 +1,4 @@
-package org.apache.camel.example.xmldb;
+package org.apache.camel.example.xmldb.objects;
 
 import java.util.Collection;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class AuthorService {
 
-    public AuthorService() { }
+    public AuthorService() { super(); }
     
     private final Map<String, Author> authors = new TreeMap<>();
 

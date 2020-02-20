@@ -1,4 +1,4 @@
-package org.apache.camel.example.xmldb;
+package org.apache.camel.example.xmldb.objects;
 
 public class Author {
 
@@ -6,14 +6,19 @@ public class Author {
     private String firstName;
 
     public Author() {
+        super();
     }
 
     public Author(int id, String firstName) {
+        super(); 
+
         this.id = id;
         this.firstName = firstName;
     }
 
     public Author(String id, String firstName) {
+        super();
+        
         this.id = Integer.parseInt(id);
         this.firstName = firstName;
     }
