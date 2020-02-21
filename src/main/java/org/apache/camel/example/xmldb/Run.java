@@ -1,8 +1,9 @@
 package org.apache.camel.example.xmldb;
 
-import org.apache.camel.example.xmldb.objects.*;
 import org.apache.camel.main.Main;
-import org.apache.camel.example.xmldb.util.Database;
+
+import org.apache.camel.example.xmldb.app.Database;
+import org.apache.camel.example.xmldb.objects.*;
 
 public class Run {
 
