@@ -3,7 +3,6 @@ package org.apache.camel.example.xmldb.objects;
 public class Article {
 
     private int id;
-    private String firstName;
 
     public Article() {
         super();
@@ -17,6 +16,6 @@ public class Article {
 
     @Override
     public String toString() { 
-        return String.format("#" + this.id + ", " + this.firstName); 
+        return String.format("#" + this.id); 
     }
 }

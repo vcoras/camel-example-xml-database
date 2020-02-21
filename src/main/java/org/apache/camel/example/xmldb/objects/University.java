@@ -17,6 +17,6 @@ public class University {
 
     @Override
     public String toString() { 
-        return String.format("#" + this.id + ", " + this.firstName); 
+        return String.format("#" + this.id); 
     }
 }
